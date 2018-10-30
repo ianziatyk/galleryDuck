@@ -1,0 +1,45 @@
+body{
+    // background-image: url('images/green-paper-texture.jpg');
+    background-color:rgb(208,206,207);
+    margin:0 auto;
+    overflow: hidden;
+}
+.theWrap{
+    background-color: white;
+    width: $main-width;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    box-shadow: 1px 1px 10px;
+}
+
+.totalWrap{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+footer{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.duck{
+    height:100%;
+    background-color: white;
+
+}
+
+.home-title {
+	margin: 0 auto;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+    color: gray;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}

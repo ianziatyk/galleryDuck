@@ -1,0 +1,73 @@
+.navbar {
+	width: 100%;
+	margin: 0 auto;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+		display: flex;
+		flex-direction:row;
+	}
+	
+	li {width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: 'Roboto', sans-serif;
+	}
+	
+	li a {
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+	.film {
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+		width: 100%;
+		height: 125px;
+		background: #111111;
+		overflow: hidden;
+	  }
+	  
+	  .film::before {
+		content: "";
+		position: absolute;
+		top: 4px;
+		left: 0px;
+		width: 8px;
+		height: 8px;
+		background: #5e5e5e;
+		box-shadow: 14px 0px 0px #5e5e5e, 28px 0px 0px #5e5e5e, 42px 0px 0px #5e5e5e, 56px 0px 0px #5e5e5e, 70px 0px 0px #5e5e5e, 84px 0px 0px #5e5e5e, 98px 0px 0px #5e5e5e, 112px 0px 0px #5e5e5e, 126px 0px 0px #5e5e5e, 140px 0px 0px #5e5e5e, 154px 0px 0px #5e5e5e, 168px 0px 0px #5e5e5e, 182px 0px 0px #5e5e5e, 196px 0px 0px #5e5e5e, 210px 0px 0px #5e5e5e, 224px 0px 0px #5e5e5e, 238px 0px 0px #5e5e5e, 252px 0px 0px #5e5e5e, 266px 0px 0px #5e5e5e, 280px 0px 0px #5e5e5e, 294px 0px 0px #5e5e5e, 308px 0px 0px #5e5e5e, 322px 0px 0px #5e5e5e, 336px 0px 0px #5e5e5e,350px 0px 0px #5e5e5e, 364px 0px 0px #5e5e5e, 378px 0px 0px #5e5e5e, 392px 0px 0px #5e5e5e,406px 0px 0px #5e5e5e, 420px 0px 0px #5e5e5e, 434px 0px 0px #5e5e5e, 448px 0px 0px #5e5e5e, 462px 0px 0px #5e5e5e,476px 0px 0px #5e5e5e,490px 0px 0px #5e5e5e, 504px 0px 0px #5e5e5e, 518px 0px 0px #5e5e5e, 532px 0px 0px #5e5e5e, 546px 0px 0px #5e5e5e,560px 0px 0px #5e5e5e,574px 0px 0px #5e5e5e, 588px 0px 0px #5e5e5e, 602px 0px 0px #5e5e5e,616px 0px 0px #5e5e5e, 630px 0px 0px #5e5e5e, 644px 0px 0px #5e5e5e, 658px 0px 0px #5e5e5e, 672px 0px 0px #5e5e5e, 686px 0px 0px #5e5e5e, 700px 0px 0px #5e5e5e, 714px 0px 0px #5e5e5e, 728px 0px 0px #5e5e5e, 742px 0px 0px #5e5e5e, 756px 0px 0px #5e5e5e, 770px 0px 0px #5e5e5e, 784px 0px 0px #5e5e5e, 798px 0px 0px #5e5e5e, 812px 0px 0px #5e5e5e, 826px 0px 0px #5e5e5e, 840px 0px 0px #5e5e5e, 854px 0px 0px #5e5e5e;
+	  }
+	  
+	  .film::after {
+		content: "";
+		position: absolute;
+		bottom: 4px;
+		left: 0px;
+		width: 8px;
+		height: 8px;
+		background: #5e5e5e;
+		box-shadow: 14px 0px 0px #5e5e5e, 28px 0px 0px #5e5e5e, 42px 0px 0px #5e5e5e, 56px 0px 0px #5e5e5e, 70px 0px 0px #5e5e5e, 84px 0px 0px #5e5e5e, 98px 0px 0px #5e5e5e, 112px 0px 0px #5e5e5e, 126px 0px 0px #5e5e5e, 140px 0px 0px #5e5e5e, 154px 0px 0px #5e5e5e, 168px 0px 0px #5e5e5e, 182px 0px 0px #5e5e5e, 196px 0px 0px #5e5e5e, 210px 0px 0px #5e5e5e, 224px 0px 0px #5e5e5e, 238px 0px 0px #5e5e5e, 252px 0px 0px #5e5e5e, 266px 0px 0px #5e5e5e, 280px 0px 0px #5e5e5e, 294px 0px 0px #5e5e5e, 308px 0px 0px #5e5e5e, 322px 0px 0px #5e5e5e,336px 0px 0px #5e5e5e, 350px 0px 0px #5e5e5e,364px 0px 0px #5e5e5e, 378px 0px 0px #5e5e5e,392px 0px 0px #5e5e5e,406px 0px 0px #5e5e5e, 420px 0px 0px #5e5e5e, 434px 0px 0px #5e5e5e, 448px 0px 0px #5e5e5e, 462px 0px 0px #5e5e5e,476px 0px 0px #5e5e5e,490px 0px 0px #5e5e5e, 504px 0px 0px #5e5e5e, 518px 0px 0px #5e5e5e, 532px 0px 0px #5e5e5e, 546px 0px 0px #5e5e5e,560px 0px 0px #5e5e5e,574px 0px 0px #5e5e5e, 588px 0px 0px #5e5e5e, 602px 0px 0px #5e5e5e,616px 0px 0px #5e5e5e, 630px 0px 0px #5e5e5e, 644px 0px 0px #5e5e5e, 658px 0px 0px #5e5e5e, 672px 0px 0px #5e5e5e, 686px 0px 0px #5e5e5e, 700px 0px 0px #5e5e5e, 714px 0px 0px #5e5e5e, 728px 0px 0px #5e5e5e, 742px 0px 0px #5e5e5e, 756px 0px 0px #5e5e5e, 770px 0px 0px #5e5e5e, 784px 0px 0px #5e5e5e, 798px 0px 0px #5e5e5e, 812px 0px 0px #5e5e5e, 826px 0px 0px #5e5e5e, 840px 0px 0px #5e5e5e, 854px 0px 0px #5e5e5e;
+	  }
+	  
+	  .film div {
+		width: 115px;
+		height: 70%;
+		top: 50%;
+		transform: translate(0%, -50%);
+		margin-left: 4px;
+		box-shadow: inset 0px 0px 10px 0px #d2d2d2;
+		display: inline-block;
+		margin-top: 62.5px;
+	  }
+	  
+	
+	
