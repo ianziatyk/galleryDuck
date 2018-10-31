@@ -2,53 +2,64 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="../css/main.css" href="//fonts.googleapis.com/css?||family=Roboto" family="Comfortaa">
+	<link rel="stylesheet" type="text/css" href="../css/main.css" href="//fonts.googleapis.com/css?family=Nunito" || family="Roboto"|| family="Comfortaa">
 </head>
 <body>
-<div class='theWrap'>
-		<div class="home-title">
-			<h1 class='duck'> Framed Duck Photos</h1>
-		</div>
-	<nav class="navbar">
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="/products">Products</a></li>
-			<li><a href="/search">Search</a></li>
-			<li><a href="/contact">Contact</a></li>
 
-		</ul>
-	</nav>
-
+<div class="duck">
 	
-<div class="film">
-
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  
- 
-
+	<div id='name'>
+		<div><strong>IAN M Ziatyk</strong> presents</div>
+		<ul>
+			<li>Sign in     |</li>
+			<li>  Register</li>
+		</ul>
+	</div>
 </div>
+
+<div class='theSecondWrap'>
+	
+	<div class="navbar">
+	<div id='companyName'><a href = "/" style="text-decoration:none";>
+	<strong>Gallery</strong>DUCK<strong></strong>
+	</div>
+	
+		<nav id='navRight'>
+			<ul>
+			<li  id='enterStore'><a href="/store"><strong>Enter</strong>store</a></li>
+				<%# <li><a href="/">Home</a></li> %>
+				<%# <li><a href="/film">Film</a></li> %>
+				<%# <li><a href="/search">Search</a></li> %>
+				<%# <li><a href="/contact">Contact</a></li> %>
+
+			</ul>
+		</nav>
+	</div>
+	</div>
+	
 		<div class="main-container">
 			<%= yield %>
 		</div>
 
+<div id='fuckMe'>
 	<footer>
 		<ul>
-			<li>a</li>
-			<li>b</li>
-			<li>c</li>
-			<li>d</li>
+			<li><a href="/contact">Contact</a></li>
+			<li><a href="/about">About</a></li>
+			
 		</ul>
 	</footer>
-</div>
 
+	<div class='sideGrid'>
+		<div id='one'></div>
+		<div id='two'></div>
+		<div id='three'><p> test</p></div>
+		<div id='four'></div>
+		<a href="/contact"><div id='five'></div></a>
+
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="../javascript/javascript.js"></script>
 </body>
 

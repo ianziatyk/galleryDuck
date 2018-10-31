@@ -1,0 +1,30 @@
+<div id='films'>
+
+	<h3> Our Film: </h3>
+
+	Even in the digital age, roll film remains a popular product for seasoned professionals and amateur photography buffs. While most professional and almost all amateur photographers have made the switch to digital photography, fans of traditional imaging techniques still have many types of film available for their creative needs. Browse a broad selection of film products that can help you achieve quality results, whether you own a modern film camera or a vintage model.-www.bh.com
+	<div>
+		<% @heynow.each do |x| %>
+	
+		<div id='uncrate'>
+	
+			<img id='uncrateImage' src= <%= x.get_url %>>
+	
+			<div id='uncrateWrap'>
+				<div id='priceBox'> Buy: Starting at $<%= x.get_price%> and up</div>
+				<div><%=x.get_type%> |<%=x.get_size%></div>
+				<br>
+			<div><%=x.get_des%></div>
+	
+			</div>
+	
+	
+		</div> 
+
+		<% end %>
+	
+	</div>
+
+</div>
+
+

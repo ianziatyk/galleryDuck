@@ -1,0 +1,25 @@
+<div id='films'>
+
+	<h3> Our Cameras:</h3>
+
+	'When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.' - Ansel Adams	<div>
+		<% @camNow.each do |x| %>
+	
+		<div id='uncrate'>
+	
+			<img id='uncrateImage' src= <%= x.get_url %>>
+	
+			<div id='uncrateWrap'>
+				<div id='priceBox'> Buy: Starting at $<%= x.get_price%> and up</div>
+				<div><%=x.get_type%> |<%=x.get_size%></div>
+				<br>
+			<div><%=x.get_des%></div>
+	
+			</div>
+	
+	
+		</div> 
+
+		<% end %>
+	
+	</div>

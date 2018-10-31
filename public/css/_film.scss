@@ -1,0 +1,51 @@
+.pro{
+    color: black;
+}
+
+#films{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#uncrate{
+    border: 1px solid lightgray;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin:30px;
+    
+   
+    }
+
+    #uncrateImage{
+        padding: 10px;
+       width:300px;
+       height: 300px;
+       margin-left: auto;
+       margin-right: auto;
+       box-shadow: inset 0px 2px 25px rgba(0,0,0,0.2);;
+    }
+
+    #uncrateWrap{
+
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        height: 100px;
+        margin-top: 10px;
+        overflow: scroll;
+    }
+
+    #priceBox{
+        margin-bottom: 15px;
+        background-color: black;
+        border: 2px solid rgb(218, 126, 14);
+        color: white;
+       
+    }
+    #priceBox:hover{
+        transform: scale(1.01);
+    }

@@ -1,0 +1,54 @@
+.storeImageGridWrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 2px solid black;
+    width: $main-width;
+    margin-left: auto;
+    margin-right: auto;
+    height: 555px;
+}
+
+div .storeText{
+    color: white;
+    text-align: center;
+    margin-top: 225px;
+    height: 100%;
+    font-size: 10vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+
+}
+
+#film{background-image: url(./images/filmprince.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+
+}
+#film:hover{
+    opacity: 0.94;
+
+}
+
+#cameras{background-image: url(./images/canonae1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+}
+#cameras:hover{
+    opacity: 0.94;
+
+}
+
+#lenses{background-image: url(./images/helios-44.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#lenses:hover{
+    opacity: 0.94;
+
+}
