@@ -1,27 +1,48 @@
+function getFilm () {
+    //Get all Cakes
+	var film_one = document.querySelectorAll('#priceBox')
 
+	//Loop through cakes Nodelist and Add event Listeners
+	for(let i = 0; i < film_one.length; i++) {
+		film_one[i].addEventListener('click', () => {
+			fetch('http://localhost:4567/update/films')
+			
+		
+			
+		})
+	}
+}
 
+function getCamera () {
+    //Get all Cakes
+	var camera_one = document.querySelectorAll('#priceBox')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	//Loop through cakes Nodelist and Add event Listeners
+	for(let i = 0; i < camera_one.length; i++) {
+		camera_one[i].addEventListener('click', () => {
+			fetch('http://localhost:4567/update/cameras')
+			
+		
+			
+		})
+	}
+}
+	
+	function getLens () {
+		//Get all Cakes
+		var camera_one = document.querySelectorAll('#priceBox')
+	
+		//Loop through cakes Nodelist and Add event Listeners
+		for(let i = 0; i < camera_one.length; i++) {
+			camera_one[i].addEventListener('click', () => {
+				fetch('http://localhost:4567/update/lenses')
+				
+			
+				
+			})
+		}
+	}
+	
 
 
 

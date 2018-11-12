@@ -1,0 +1,17 @@
+<div class= "cartForm">
+
+<form method="post" action="fix">
+   Film:
+  <input id='film-one'name="film-one" value='<%= @database["films"] %>' type="text"><br/>
+
+  Camera:
+  <input id='cake-one' name="cake-one" type="text" value='<%= @database["cameras"] %>'><br/> 
+
+  Lenses:
+  <input id='cookie-one' name="cookie-one" type="text" value='<%= @database["lenses"] %>'><br/>
+
+  <input type="hidden" name="_format" value="plain" />
+  <button type="submit">Send</button>
+</form>
+</div>
+

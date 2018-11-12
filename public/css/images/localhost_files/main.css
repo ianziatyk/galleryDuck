@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: small; }
+
+input {
+  display: inline-flex;
+  flex-direction: row;
+  border: 1px solid black;
+  background: rgba(200, 255, 234, 0.5);
+  color: black;
+  border-radius: 5px; }
+
+h6 {
+  color: black;
+  margin-right: 50px; }
+
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0; }
+
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888; }
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color; }
+
+.nav a:hover {
+  background-color: #005f5f; }
+
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default; }
+
+.main-container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+#flash {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #444444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  list-style: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888; }
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color; }
+
+.nav a:hover {
+  background-color: #005f5f; }
+
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default; }
+
+.blogText {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: small;
+  text-align: justify; }
+
+.blogTitle {
+  font-size: x-large;
+  padding: 10px 10px;
+  text-align: left; }
+
+textarea {
+  color: gray;
+  background-color: white; }
+
+.sideGrid {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 240px;
+  height: 250px; }
+
+p {
+  visibility: hidden; }
+
+#one {
+  width: 50px;
+  height: 50px;
+  background-color: #3b5998;
+  border-radius: 0px 20px 0px 0px;
+  background-image: url(./images/fbB.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s; }
+
+#one:hover {
+  width: 150px;
+  transition: 0.3s;
+  border-radius: 0px 10px 10px 0px; }
+
+#two {
+  background-color: #1da1f2;
+  width: 50px;
+  height: 50px;
+  background-image: url(./images/twitter.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s; }
+
+#two:hover {
+  width: 150px;
+  transition: 0.3s;
+  border-radius: 0px 10px 10px 0px; }
+
+#three {
+  background-color: #faa472;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  background-image: url(./images/instaG.png);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+#three:hover {
+  width: 150px;
+  border-radius: 0px 10px 10px 0px; }
+
+#four {
+  background-color: #49ce68;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  background-image: url(./images/shareG.png);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+#four:hover {
+  width: 150px;
+  border-radius: 0px 10px 10px 0px; }
+
+#five {
+  background-color: grey;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  border-radius: 0px 0px 20px 0px;
+  background-image: url(./images/mail-iconG.png);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+#five:hover {
+  width: 150px;
+  border-radius: 0px 10px 10px 0px; }
+
+/*# sourceMappingURL=main.css.map */

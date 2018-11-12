@@ -1,6 +1,5 @@
 body{
-    // background-image: url('images/green-paper-texture.jpg');
-    background-color:white;
+    background-color:rgb(255, 255, 255);
     margin:0px auto;
     overflow: scroll;
 }
@@ -13,7 +12,6 @@ a { color: inherit;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    // box-shadow: 1px 1px 10px;
 }
 .mySlides{
     margin-left: auto;
@@ -56,5 +54,11 @@ footer{
     margin-left: auto;
     margin-right: auto;
     margin-top:150px;
+}
+
+.cartForm{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 

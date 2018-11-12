@@ -2,6 +2,8 @@ require 'sinatra'
 require "sendgrid-ruby"
 include SendGrid
 
+database = { "films" => 0, "cameras" => 0, "lenses" => 0 }
+
 
 get "/" do
 	
@@ -99,8 +101,8 @@ get "/cameras" do
 end
 
 @camera1 = Cameras.new("Canon 5d markii", "Full-Frame", 3499.00, "The first full frame camera with live view and video. A modern classic that launched the HDSLR age", 'css/images/5d2.png')
-@camera2 = Cameras.new("Canon AE-1", "Full-Frame", 249.99, "The first Canon camera with PASM", 'css/images/5d2.png')
-@camera3 = Cameras.new("Canon 5d markii", "Full-Frame", 3499.00, "The first full frame camera with live view and video. A modern classic that launched the HDSLR age", 'css/images/5d2.png')
+@camera2 = Cameras.new("Canon AE-1", "Full-Frame", 250.00, "The first Canon camera with PASM", 'css/images/canonae1.png')
+@camera3 = Cameras.new("Canon 5d markii", "Full-Frame", 3499.00, "The first full frame camera with live view and video. A modern classic that launched the HDSLR age", 'css/images/a55.png')
 
 
 @camNow = [@camera1,@camera2,@camera3]
@@ -109,6 +111,47 @@ end
 
 	erb :cameras
 end
+
+get "/lenses" do
+
+	class Lenses
+		def initialize(type,size,price,description,url)
+			@type = type
+			@size = size
+			@price = price
+			@description = description
+			@url = url
+		end
+	def get_type
+		 		return @type
+			 end
+	def get_size
+				return @size
+			end
+	def get_price
+				return @price
+			end
+	def get_des
+				return @description
+			end
+	def get_url
+				return @url
+			end
+end
+
+@lens1 = Lenses.new("Zeiss 35mm f/2 Distagon T ZE", "35mm", 999.00, "Zeiss anual focus lend with minimal barell distortion and a 'cooler' color balance then canon lenses", 'css/images/zeiss35.png')
+@lens2 = Lenses.new("Nikon Nikkor 24mm f/2.8 ais", "24mm", 250.00, "The last manual focus lenses by nikon, still made today", 'css/images/nikon24ais.png')
+@lens3 = Lenses.new("Canon 40mm", "40mm", 150.00, "The first full frame camera with live view and video. A modern classic that launched the HDSLR age", 'css/images/canon40.png')
+
+
+@lensNow = [@lens1,@lens2,@lens3]
+
+
+
+	erb :lenses
+end
+
+
 
 
 get '/search' do
@@ -144,12 +187,31 @@ erb :thanks
 end
 
 
-get "/login" do
-	username = params[:username]
-	password = params[:password]
-	if password == '1234' && username == 'oggidan' 
-			redirect "/search"
-		else 
-			erb :home
-		end
+get "/cart" do
+	@database = database
+
+	
+	erb :cart
 end
+
+
+get "/update/:item" do
+	
+	result = params[:item]
+
+	database[result] = database[result] + 1
+end
+
+get "/database" do
+	print database
+end
+
+# get "/login" do
+# 	username = params[:username]
+# 	password = params[:password]
+# 	if password == '1234' && username == 'oggidan' 
+# 			redirect "/search"
+# 		else 
+# 			erb :home
+# 		end
+# end

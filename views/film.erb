@@ -11,12 +11,13 @@
 			<img id='uncrateImage' src= <%= x.get_url %>>
 	
 			<div id='uncrateWrap'>
-				<div id='priceBox'> Buy: Starting at $<%= x.get_price%> and up</div>
+				</a><div id='priceBox'> Buy: Starting at $<%= x.get_price%> and up</div>
 				<div><%=x.get_type%> |<%=x.get_size%></div>
 				<br>
 			<div><%=x.get_des%></div>
 	
 			</div>
+			<button id='priceBox' onclick="getFilm()">Add to Cart</button>
 	
 	
 		</div> 

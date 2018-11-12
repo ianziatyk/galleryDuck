@@ -1,9 +1,9 @@
 <div id='films'>
 
-	<h3> Our Cameras:</h3>
+	<h3> Our CamerasLenses:</h3>
 
 	'When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.' - Ansel Adams	<div>
-		<% @camNow.each do |x| %>
+		<% @lensNow.each do |x| %>
 	
 		<div id='uncrate'>
 	
@@ -14,9 +14,9 @@
 				<div><%=x.get_type%> |<%=x.get_size%></div>
 				<br>
 			<div><%=x.get_des%></div>
+			<button id='priceBox' onclick="getLens()">Add to Cart</button>
 	
 			</div>
-			<button id='priceBox' onclick="getCamera()">Add to Cart</button>
 	
 	
 		</div> 
